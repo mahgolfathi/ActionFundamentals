@@ -21,10 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show event name
-        run: echo "Event: ${{ github.event_name }}"
+        run: 'echo "Event: ${{ github.event_name }}"'
 
       - name: Show ref/branch
-        run: echo "Ref: ${{ github.ref }}"
+        run: 'echo "Ref: ${{ github.ref }}"'
 
       - name: Checkout repo
         uses: actions/checkout@v4
